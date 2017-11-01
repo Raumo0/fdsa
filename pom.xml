@@ -16,6 +16,7 @@
     <properties>
         <skipTests>false</skipTests>
         <h2.version>1.4.196</h2.version>
+        <hibernate.version>5.2.4.Final</hibernate.version>
         <junit.version>4.12</junit.version>
         <log4j.version>1.2.12</log4j.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,15 +25,20 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+            <!-- database -->
             <dependency>
                 <groupId>com.h2database</groupId>
                 <artifactId>h2</artifactId>
                 <version>${h2.version}</version>
                 <scope>test</scope>
             </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-entitymanager</artifactId>
+                <version>${hibernate.version}</version>
+            </dependency>
 
-            <!-- https://mvnrepository.com/artifact/junit/junit -->
+            <!-- testing -->
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
