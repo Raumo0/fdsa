@@ -39,6 +39,13 @@
                 <version>${hibernate.version}</version>
             </dependency>
 
+            <!-- crypto -->
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcprov-jdk15on</artifactId>
+                <version>1.58</version>
+            </dependency>
+
             <!-- testing -->
             <dependency>
                 <groupId>junit</groupId>
