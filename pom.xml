@@ -22,6 +22,7 @@
         <log4j.version>1.2.12</log4j.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven-surefire-plugin.version>2.19</maven-surefire-plugin.version>
+        <spring.version>4.2.4.RELEASE</spring.version>
     </properties>
 
     <dependencyManagement>
@@ -54,10 +55,18 @@
                 <scope>test</scope>
             </dependency>
 
+            <!-- logging -->
             <dependency>
                 <groupId>log4j</groupId>
                 <artifactId>log4j</artifactId>
                 <version>${log4j.version}</version>
+            </dependency>
+
+            <!-- spring -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-tx</artifactId>
+                <version>${spring.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
